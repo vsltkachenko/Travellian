@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Travellian" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__main main-page" id="section-1">
+					<div class="main-page__container">
+						<div class="main-page__content">
+							<h1 class="main-page__title">Start your unforgettable journey with us.</h1>
+							<p class="main-page__subtitle">The best travel for your jouney begins now</p>
+							<div class="main-page__booking booking">
+								<form class="booking__form form">
+									<ul class="form__fields">
+										<li class="form__field field-form">
+											<label class="field-form__label" for="destination">Destination</label>
+											<input autocomplete="off" autofocus class="field-form__input" type="text" id="destination" placeholder="Dubai" />
+										</li>
+										<li class="form__field field-form">
+											<label class="field-form__label" for="person">Person</label>
+											<select class="field-form__input _icon-arrow-down" id="person" data-class-modif="person">
+												<option value="1">1</option>
+												<option value="2" selected>2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</li>
+										<li class="form__field field-form">
+											<label class="field-form__label" for="check_in">Check in</label>
+											<input class="field-form__input" type="text" id="check_in" autocomplete="off" placeholder="Check in" />
+										</li>
+										<li class="form__field field-form">
+											<label class="field-form__label" for="check_out">Check out</label>
+											<input class="field-form__input" type="text" id="check_out" autocomplete="off" placeholder="Check out" />
+										</li>
+									</ul>
+									<div class="booking__submit">
+										<button type="button" class="booking__button _icon-arrow-link"><span>Book</span><span>Now</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-page__slider slider-main swiper">
+						<div class="slider-main__wrapper swiper-wrapper">
+							<div class="slider-main__slide swiper-slide">
+								<div class="slider-main__image-ibg">
+									<img src="@img/main-page/bg-1.jpg" alt="" height="100vh" />
+								</div>
+							</div>
+							<div class="slider-main__slide swiper-slide">
+								<div class="slider-main__image-ibg">
+									<img src="@img/main-page/bg-2.jpg" alt="" />
+								</div>
+							</div>
+							<div class="slider-main__slide swiper-slide">
+								<div class="slider-main__image-ibg">
+									<img src="@img/main-page/bg-3.jpg" alt="" />
+								</div>
+							</div>
+							<div class="slider-main__slide swiper-slide">
+								<div class="slider-main__image-ibg">
+									<img src="@img/main-page/bg-4.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="slider-main__controls">
+							<div class="slider-main__pagination"></div>
+							<button type="button" class="slider-main__button-prev _icon-arrow-down"></button>
+							<button type="button" class="slider-main__button-next _icon-arrow-down"></button>
+						</div>
+					</div>
+				</section>
+				<section class="page__destinations destinations" id="section-2">
+					<div class="destinations__container">
+						<div class="destinations__head">
+							<div class="destinations__caption">
+								<h2 class="destinations__title title">Popular Destinations</h2>
+								<p class="destinations__subtitle subtitle">
+									Most popular destinations around the world, from historical places to natural wonders.
+								</p>
+							</div>
+							<div class="slider-destinations__controls slider-controls">
+								<button type="button" class="slider-controls__button-prev _icon-arrow"></button>
+								<button type="button" class="slider-controls__button-next _icon-arrow"></button>
+							</div>
+						</div>
+
+						<div class="destinations__slider slider-destinations swiper">
+							<div class="slider-destinations__wrapper swiper-wrapper">
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/1.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/2.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/3.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/4.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/1.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/2.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/3.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-destinations__slide swiper-slide">
+									<a href="#" class="slider-destinations__image">
+										<img src="@img/destinations/4.png" alt="Image" />
+									</a>
+								</div>
+							</div>
+							<div class="slider-destinations__pagination slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__offer offer" id="section-3">
+					<div class="offer__container">
+						<div class="offer__head">
+							<div class="offer__caption">
+								<h2 class="offer__title title">Special Offer</h2>
+								<p class="offer__subtitle subtitle">Check out our special offer and discounts</p>
+							</div>
+							<div class="slider-offer__controls slider-controls">
+								<button type="button" class="slider-controls__button-prev _icon-arrow"></button>
+								<button type="button" class="slider-controls__button-next _icon-arrow"></button>
+							</div>
+						</div>
+						<div class="offer__slider slider-offer swiper">
+							<div class="slider-offer__wrapper swiper-wrapper">
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/1.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Lisbon, Portugal</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€500</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/2.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Athens, Greece</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€800</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/3.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Rome, Italy</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€750</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/1.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Lisbon, Portugal</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€500</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/2.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Athens, Greece</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€800</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+								<article class="slider-offer__slide swiper-slide">
+									<div class="slider-offer__image-ibg">
+										<img src="@img/offer/3.png" alt="Image" />
+									</div>
+									<div class="slider-offer__content">
+										<h4 class="slider-offer__title">Rome, Italy</h4>
+										<p class="slider-offer__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and
+											going through the cites of the world in classical literature.
+										</p>
+										<div class="slider-offer__info info-slider">
+											<div class="info-slider__price">From <span>€750</span></div>
+											<a href="#" class="info-slider__button button">DETAILS</a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="slider-offer__pagination slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__blog blog" id="section-4">
+					<div class="blog__container">
+						<div class="blog__head">
+							<div class="blog__caption">
+								<h2 class="blog__title title">Our Blog</h2>
+								<p class="blog__subtitle subtitle">An insight the incredible experience in the world</p>
+							</div>
+						</div>
+						<div class="blog__body">
+							<div class="blog__image-ibg">
+								<img src="@img/blog/1.png" alt="Image" />
+							</div>
+							<article class="blog__content content-blog">
+								<h3 class="content-blog__title">Beautiful Italy Let’s travel</h3>
+								<p class="content-blog__text">
+									But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you
+									a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder
+									of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do
+									not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who
+									loves or pursues.
+								</p>
+								<a href="#" class="content-blog__more _icon-arrow-link-long">Read More</a>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="page__planners planners" id="section-5">
+					<div class="planners__container">
+						<div class="planners__head">
+							<div class="planners__caption">
+								<h2 class="planners__title title">Trip Planners</h2>
+								<p class="planners__subtitle subtitle">
+									20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling,
+									start throwing off the bowlines.
+								</p>
+							</div>
+							<a href="#" class="planners__button button" data-da=".planners__container,768">View all trip plans</a>
+						</div>
+						<div class="planners__slider slider-planners swiper">
+							<div class="slider-planners__wrapper swiper-wrapper">
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/1.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/2.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/3.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/4.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/1.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/2.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/3.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/4.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/1.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/2.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/3.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+								<div class="slider-planners__slide slide-planners swiper-slide">
+									<a href="#" class="slide-planners__image-ibg">
+										<img src="@img/planners/4.png" alt="Image" />
+									</a>
+									<div class="slide-planners__info">
+										<div class="slide-planners__price">Guided Tour<span>€99/Day</span></div>
+										<div class="slide-planners__title">Paris City Tour</div>
+										<div class="slide-planners__time">7 Days tour</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__experiences gallery">
+					<div class="gallery__container">
+						<div class="gallery__head">
+							<div class="gallery__caption">
+								<h2 class="gallery__title title">Destination Gallery</h2>
+								<p class="gallery__subtitle subtitle">Our photo gallery on trip</p>
+							</div>
+							<div class="slider-gallery__controls slider-controls">
+								<button type="button" class="slider-controls__button-prev _icon-arrow"></button>
+								<button type="button" class="slider-controls__button-next _icon-arrow"></button>
+							</div>
+						</div>
+						<div class="gallery__slider slider-gallery swiper">
+							<div class="slider-gallery__wrapper swiper-wrapper">
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/1.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/2.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/3.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/4.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/1.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/2.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/3.png" alt="Image" />
+									</a>
+								</div>
+								<div class="slider-gallery__slide swiper-slide">
+									<a href="" class="slider-gallery__image">
+										<img src="@img/gallery/4.png" alt="Image" />
+									</a>
+								</div>
+							</div>
+							<div class="slider-gallery__pagination slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__experiences experiences">
+					<div class="experiences__container">
+						<div class="experiences__head">
+							<div class="experiences__caption">
+								<h2 class="experiences__title title">Traveler’s Experiences</h2>
+								<p class="experiences__subtitle subtitle">Here some awesome feedback from our travelers</p>
+							</div>
+						</div>
+						<div class="experiences__slider slider-experiences swiper">
+							<div class="slider-experiences__wrapper swiper-wrapper">
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-1.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">John Doe <span>Accountant</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-2.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">John Doe <span>Journalist, HWO News</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-3.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">Tamara Bellis <span>Managing Director, JTH</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-1.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">John Doe <span>Accountant</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-2.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">John Doe <span>Journalist, HWO News</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-experiences__slide swiper-slide">
+									<div class="slider-experiences__body">
+										<a href="#" class="slider-experiences__image">
+											<img src="@img/experiences/avatar-3.png" alt="Image" />
+										</a>
+										<div class="slider-experiences__content">
+											<p class="slider-experiences__text">
+												But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+												give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+												master- builder of human happiness.
+											</p>
+											<div class="slider-experiences__author">Tamara Bellis <span>Managing Director, JTH</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-experiences__controls slider-controls">
+								<button type="button" class="slider-controls__button-prev _icon-arrow"></button>
+								<button type="button" class="slider-controls__button-next _icon-arrow"></button>
+							</div>
+							<div class="slider-experiences__pagination slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<form action="" class="newsletter">
+					<div class="newsletter__container">
+						<div class="newsletter__content">
+							<h2 class="newsletter__title">Our Newsletter</h2>
+							<div class="newsletter__body">
+								<span>Email</span>
+								<div class="newsletter__action">
+									<input type="text" name="email" data-error="Error" placeholder="Enter your email" class="newsletter__input" />
+									<button type="submit" class="newsletter__button button">Subscribe</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>			
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
